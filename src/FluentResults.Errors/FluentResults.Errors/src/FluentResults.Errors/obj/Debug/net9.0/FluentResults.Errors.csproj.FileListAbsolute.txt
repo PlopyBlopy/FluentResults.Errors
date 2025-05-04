@@ -1,0 +1,16 @@
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.AssemblyInfoInputs.cache
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.AssemblyInfo.cs
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.csproj.CoreCompileInputs.cache
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\FluentResults.Errors.deps.json
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\FluentResults.Errors.dll
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\FluentResults.Errors.pdb
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\FluentResults.Errors.xml
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.csproj.AssemblyReference.cache
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.dll
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\refint\FluentResults.Errors.dll
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.xml
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.pdb
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\ref\FluentResults.Errors.dll
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\obj\Debug\net9.0\FluentResults.Errors.sourcelink.json
+C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\icon.png

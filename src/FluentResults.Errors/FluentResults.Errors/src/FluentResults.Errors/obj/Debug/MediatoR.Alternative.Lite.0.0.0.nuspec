@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MediatoR.Alternative.Lite</id>
+    <version>0.0.0</version>
+    <title>MediatoR.Alternative.Lite</title>
+    <authors>PlopyBlopy</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <description>A lightweight Mediator alternative for Request processing, with Pipeline Behavior.</description>
+    <tags>mediator</tags>
+    <repository type="git" url="https://github.com/PlopyBlopy/MediatoR.Alternative" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="FluentResults" version="3.16.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\FluentResults.Errors.dll" target="lib\net9.0\FluentResults.Errors.dll" />
+    <file src="C:\repos\Libraries\FluentResults.Errors\src\FluentResults.Errors\FluentResults.Errors\src\FluentResults.Errors\bin\Debug\net9.0\FluentResults.Errors.xml" target="lib\net9.0\FluentResults.Errors.xml" />
+  </files>
+</package>

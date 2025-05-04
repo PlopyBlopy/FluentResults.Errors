@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FluentResults.Errors</name>
+    </assembly>
+    <members>
+        <member name="T:FluentResults.Errors.BaseError">
+            <summary>
+            Represents a base error class implementing the IError interface.
+            Provides common error properties and metadata handling capabilities.
+            </summary>
+        </member>
+        <member name="P:FluentResults.Errors.BaseError.ErrorType">
+            <summary>
+            Gets the type of the error from the ErrorType enumeration
+            </summary>
+        </member>
+        <member name="P:FluentResults.Errors.BaseError.Message">
+            <summary>
+            Gets the human-readable error message
+            </summary>
+        </member>
+        <member name="P:FluentResults.Errors.BaseError.Reasons">
+            <summary>
+            Gets the list of underlying errors that caused this error
+            </summary>
+        </member>
+        <member name="P:FluentResults.Errors.BaseError.Metadata">
+            <summary>
+            Gets the dictionary of additional error metadata.
+            Contains technical details about the error context.
+            </summary>
+        </member>
+        <member name="M:FluentResults.Errors.BaseError.#ctor(System.String,FluentResults.Errors.ErrorType,System.Collections.Generic.IEnumerable{FluentResults.IError},System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Initializes a new instance of the BaseError class
+            </summary>
+            <param name="message">Human-readable error description</param>
+            <param name="errorType">Categorization of the error type</param>
+            <param name="reasons">Optional collection of underlying errors</param>
+            <param name="metadata">Optional metadata dictionary. Note: 'errorType' key is reserved.</param>
+            <exception cref="T:System.ArgumentException">Thrown when metadata contains reserved 'errorType' key</exception>
+        </member>
+        <member name="M:FluentResults.Errors.BaseError.CreateMetadata(System.ValueTuple{FluentResults.Errors.ErrorMetadataType,System.Object}[])">
+            <summary>
+            Creates a metadata dictionary from provided key-value pairs
+            </summary>
+            <param name="values">Array of ErrorMetadataType-value tuples</param>
+            <returns>Dictionary with string keys (from enum names) and object values</returns>
+        </member>
+        <member name="T:FluentResults.Errors.ErrorMetadataType">
+            <summary>
+            Specifies types of metadata that can be attached to errors
+            </summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.ErrorCode">
+            <summary>Unique error identifier code</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.EntityType">
+            <summary>Type of entity related to the error</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.ValidationRule">
+            <summary>Validation rule that was violated</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.AttemptedValue">
+            <summary>Invalid value that caused the error</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.Timestamp">
+            <summary>Time when error occurred</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.RequestId">
+            <summary>Unique request identifier</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.ServiceName">
+            <summary>Service where error originated</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.DocumentationUrl">
+            <summary>URL to error documentation</summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataType.FieldName">
+            <summary>Name of the field causing error</summary>
+        </member>
+        <member name="T:FluentResults.Errors.ErrorMetadataValue">
+            <summary>
+            Provides common values for error metadata entries
+            </summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorMetadataValue.Required">
+            <summary>Indicates a required field validation rule</summary>
+        </member>
+        <member name="T:FluentResults.Errors.ErrorType">
+            <summary>
+            Defines types of errors in the system
+            </summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorType.Validation">
+            <summary>
+            General validation error
+            </summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorType.ValidationField">
+            <summary>
+            Field-specific validation error
+            </summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorType.NotFound">
+            <summary>
+            Resource not found error
+            </summary>
+        </member>
+        <member name="F:FluentResults.Errors.ErrorType.NotNull">
+            <summary>
+            Missing required value error
+            </summary>
+        </member>
+        <member name="T:FluentResults.Errors.NotFoundError">
+            <summary>
+            Represents an error when a requested entity is not found
+            </summary>
+        </member>
+        <member name="M:FluentResults.Errors.NotFoundError.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new not-found error
+            </summary>
+            <param name="errorCode">Domain-specific error code</param>
+            <param name="entityName">Name of the missing entity</param>
+        </member>
+        <member name="T:FluentResults.Errors.NotNullError">
+            <summary>
+            Represents an error when a required field is null
+            </summary>
+        </member>
+        <member name="M:FluentResults.Errors.NotNullError.#ctor(System.String)">
+            <summary>
+            Initializes a new not-null validation error
+            </summary>
+            <param name="fieldName">Name of the field that cannot be null</param>
+        </member>
+        <member name="T:FluentResults.Errors.ValidationError">
+            <summary>
+            Represents a composite validation error containing multiple field errors
+            </summary>
+        </member>
+        <member name="M:FluentResults.Errors.ValidationError.#ctor(System.String,System.Collections.Generic.IEnumerable{FluentResults.Errors.ValidationFieldError})">
+            <summary>
+            Initializes a new validation error for an entity
+            </summary>
+            <param name="entityType">Type of entity that failed validation</param>
+            <param name="fieldErrors">Collection of specific field validation errors</param>
+        </member>
+        <member name="T:FluentResults.Errors.ValidationFieldError">
+            <summary>
+            Represents a validation error for a specific field
+            </summary>
+        </member>
+        <member name="M:FluentResults.Errors.ValidationFieldError.#ctor(System.String,System.String,System.String,System.Object)">
+            <summary>
+            Initializes a new field validation error
+            </summary>
+            <param name="message">Human-readable error message</param>
+            <param name="errorCode">Unique error identifier code</param>
+            <param name="fieldName">Name of the invalid field</param>
+            <param name="attemptedValue">Invalid value that was provided</param>
+        </member>
+    </members>
+</doc>
