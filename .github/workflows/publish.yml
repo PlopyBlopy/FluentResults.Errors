@@ -39,7 +39,7 @@ jobs:
 
       # Шаг 5: Тесты
       - name: Run tests
-        run: dotnet test ./src/FluentResults.Errors/FluentResults.Errors/tests/FluentResults.Errors.Tests/FluentResults.Errors.Tests.csproj --configuration Release --no-build
+        run: dotnet test ./src/FluentResults.Errors/tests/FluentResults.Errors.Tests/FluentResults.Errors.Tests.csproj --configuration Release --no-build
 
       # Шаг 6: Извлечение версии из тега (только для релизных сборок)
       - name: Extract version from tag
@@ -52,7 +52,7 @@ jobs:
       # Шаг 7: Создание пакета
       - name: Pack
         run: |
-          dotnet pack ./src/FluentResults.Errors/FluentResults.Errors/src/FluentResults.Errors/FluentResults.Errors.csproj \
+          dotnet pack ./src/FluentResults.Errors/src/FluentResults.Errors/FluentResults.Errors.csproj \
             --configuration Release \
             --no-build \
             --output ./artifacts \
@@ -72,3 +72,10 @@ jobs:
             --source "github" \
             --api-key ${{ secrets.GITHUB_TOKEN }} \
             --skip-duplicate
+
+      - name: Push to nuget.org
+        if: contains(github.ref, 'tags/v')
+        run: |
+          dotnet nuget push ./artifacts/*.nupkg \
+            --source "https://api.nuget.org/v3/index.json" \
+            --api-key ${{ secrets.NUGET_API_KEY }} 
