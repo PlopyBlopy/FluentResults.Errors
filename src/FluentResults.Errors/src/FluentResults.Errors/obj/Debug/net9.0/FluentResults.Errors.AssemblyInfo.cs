@@ -18,7 +18,7 @@ using System.Reflection;
     "the \"Result-based error handling\" pattern with improved semantics and error deta" +
     "il.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0+3936558b5944432494bf06c7116a7f12380acde1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.0.0+a5c122ef0001c7f21fb2a40a9e300ebe7004a865")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentResults.Errors")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluentResults.Errors")]
 [assembly: System.Reflection.AssemblyVersionAttribute("0.0.0.0")]

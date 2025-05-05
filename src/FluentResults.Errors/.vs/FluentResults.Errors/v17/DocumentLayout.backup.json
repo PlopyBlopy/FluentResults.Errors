@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\localized\\en-us\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\localized\\en-us\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\localized\\ru-ru\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\localized\\ru-ru\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+      "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\fluentresults.errors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\fluentresults.errors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\fluentresults.errors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\fluentresults.errors.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\localized\\en-us\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\localized\\en-us\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|c:\\repos\\libraries\\fluentresults.errors\\src\\fluentresults.errors\\src\\fluentresults.errors\\localized\\ru-ru\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{6108DE9D-E99D-532C-7E30-5E5C49C924DF}|src\\FluentResults.Errors\\FluentResults.Errors.csproj|solutionrelative:src\\fluentresults.errors\\localized\\ru-ru\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,24 +26,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "README.md",
               "DocumentMoniker": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\localized\\en-us\\README.md",
               "RelativeDocumentMoniker": "src\\FluentResults.Errors\\localized\\en-us\\README.md",
               "ToolTip": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\localized\\en-us\\README.md",
               "RelativeToolTip": "src\\FluentResults.Errors\\localized\\en-us\\README.md",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAGYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-05-05T19:30:01.298Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T19:30:01.298Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "README.md",
               "DocumentMoniker": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\localized\\ru-ru\\README.md",
               "RelativeDocumentMoniker": "src\\FluentResults.Errors\\localized\\ru-ru\\README.md",
@@ -51,31 +50,30 @@
               "RelativeToolTip": "src\\FluentResults.Errors\\localized\\ru-ru\\README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-05-05T19:30:00.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T19:30:00.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "README.md",
               "DocumentMoniker": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\README.md",
               "RelativeDocumentMoniker": "src\\FluentResults.Errors\\README.md",
               "ToolTip": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\README.md",
               "RelativeToolTip": "src\\FluentResults.Errors\\README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAFIAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2025-05-05T19:29:57.305Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FluentResults.Errors",
+              "DocumentIndex": 0,
+              "Title": "FluentResults.Errors.csproj",
               "DocumentMoniker": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\FluentResults.Errors.csproj",
               "RelativeDocumentMoniker": "src\\FluentResults.Errors\\FluentResults.Errors.csproj",
               "ToolTip": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\FluentResults.Errors.csproj",
               "RelativeToolTip": "src\\FluentResults.Errors\\FluentResults.Errors.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-05-05T18:28:56.551Z",
               "EditorCaption": ""
