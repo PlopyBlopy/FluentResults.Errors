@@ -147,7 +147,7 @@
     "version": "0.0.0",
     "restore": {
       "projectUniqueName": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\FluentResults.Errors.csproj",
-      "projectName": "FluentResults.Errors",
+      "projectName": "PlopyBlopy.FluentResults.Errors",
       "projectPath": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\FluentResults.Errors.csproj",
       "packagesPath": "C:\\Users\\Alexey\\.nuget\\packages\\",
       "outputPath": "C:\\repos\\Libraries\\FluentResults.Errors\\src\\FluentResults.Errors\\src\\FluentResults.Errors\\obj\\",

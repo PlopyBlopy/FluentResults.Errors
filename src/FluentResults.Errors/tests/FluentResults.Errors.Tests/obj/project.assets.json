@@ -412,17 +412,17 @@
           "build/net6.0/xunit.runner.visualstudio.props": {}
         }
       },
-      "FluentResults.Errors/0.0.0": {
+      "PlopyBlopy.FluentResults.Errors/0.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "FluentResults": "3.16.0"
         },
         "compile": {
-          "bin/placeholder/FluentResults.Errors.dll": {}
+          "bin/placeholder/PlopyBlopy.FluentResults.Errors.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FluentResults.Errors.dll": {}
+          "bin/placeholder/PlopyBlopy.FluentResults.Errors.dll": {}
         }
       }
     }
@@ -966,7 +966,7 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "FluentResults.Errors/0.0.0": {
+    "PlopyBlopy.FluentResults.Errors/0.0.0": {
       "type": "project",
       "path": "../../src/FluentResults.Errors/FluentResults.Errors.csproj",
       "msbuildProject": "../../src/FluentResults.Errors/FluentResults.Errors.csproj"
@@ -974,8 +974,8 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "FluentResults.Errors >= 0.0.0",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
+      "PlopyBlopy.FluentResults.Errors >= 0.0.0",
       "SonarAnalyzer.CSharp >= 10.8.0.113526",
       "coverlet.collector >= 6.0.2",
       "xunit.assert >= 2.9.3",

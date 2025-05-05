@@ -9,7 +9,7 @@ on:
 
 env:
   DOTNET_VERSION: "9.0.x"
-  PACKAGE_NAME: "FluentResults.Errors"
+  PACKAGE_NAME: "PlopyBlopy.FluentResults.Errors"
 
 jobs:
   build-and-publish:

@@ -2,13 +2,13 @@
 
     <PropertyGroup>
         <TargetFramework>net9.0</TargetFramework>
-        <PackageId>FluentResults.Errors</PackageId>
-        <Title>FluentResults.Errors</Title>
+        <PackageId>PlopyBlopy.FluentResults.Errors</PackageId>
+        <Title>PlopyBlopy.FluentResults.Errors</Title>
         <Version>0.0.0</Version>
         <Authors>PlopyBlopy</Authors>
         <Description>The library extends the capabilities of FluentResults by adding a system of typed errors with a predefined metadata structure for standard scenarios. Implements the "Result-based error handling" pattern with improved semantics and error detail.</Description>
         <PackageTags>fluentResults</PackageTags>
-        <RepositoryUrl>https://github.com/PlopyBlopy/FluentResults.Errors</RepositoryUrl>
+        <RepositoryUrl>https://github.com/PlopyBlopy/PlopyBlopy.FluentResults.Errors</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -19,14 +19,14 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="FluentResults" />
+    </ItemGroup>
+
+    <ItemGroup>
         <None Include="README.md" Pack="true" PackagePath="\" />
         <None Include="localized\ru-ru\README.md" Pack="true" PackagePath="localized\ru-ru" />
         <None Include="localized\en-us\README.md" Pack="true" PackagePath="localized\en-us" />
         <None Include="icon.png" Pack="true" PackagePath="\" />
-    </ItemGroup>
-    
-    <ItemGroup>
-      <PackageReference Include="FluentResults" />
     </ItemGroup>
 
     <ItemGroup>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FluentResults.Errors.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f8e4e7095676106169d4b25c47c8bb7b1699b1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3936558b5944432494bf06c7116a7f12380acde1")]
 [assembly: System.Reflection.AssemblyProductAttribute("FluentResults.Errors.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FluentResults.Errors.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
