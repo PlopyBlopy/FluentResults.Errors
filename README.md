@@ -1,5 +1,3 @@
-# FluentResults.Errors
-
 **Error Handling Library Based on FluentResults**  
 
 This library extends **FluentResults** by introducing a system of typed errors with predefined metadata structures for common scenarios. It implements the "Result-based error handling" pattern with enhanced semantics and error granularity.  
@@ -68,11 +66,6 @@ if (validationResult.IsFailed)
 ### **Integration with FluentResults**  
 - Compatible with all FluentResults features (result chaining, error pipeline handling)  
 - Errors are automatically serialized into FluentResults' standard structures  
-- Extends metadata via `WithMetadata()`:  
-  ```csharp  
-  Result.Fail(new NotFoundError("USER_NOT_FOUND", "User")  
-      .WithMetadata(ErrorMetadataType.DocumentationUrl, "https://errors.com/user-not-found"));  
-  ```  
 
 ---
 
@@ -84,10 +77,36 @@ if (validationResult.IsFailed)
 
 ---
 
-### **Extension Guidelines**  
-1. Add custom errors:  
-   ```csharp  
-   public sealed class DatabaseError : BaseError { ... }  
-   ```  
+### **Extension Guidelines**
 
-This library is ideal for projects requiring standardized error handling and deep diagnostic insights into issues.
+1. **Adding Specific Errors**  
+Create error classes by inheriting from `BaseError`:
+```csharp
+public sealed class DatabaseError : BaseError 
+{ 
+    // Constructor implementation
+    public DatabaseError(...) : base(...) { ... } 
+}
+```
+
+2. **Error Constructor**  
+When implementing a constructor:
+- Pass parameters to the parent class via `base()`
+- Use the `CreateMetadata()` method to build the metadata dictionary
+
+**Required parameters**:
+- `string message` — User-friendly error message
+- `ErrorType errorType` — Error type from the `ErrorType` enumeration
+
+**Optional parameters**:
+- `IEnumerable<IError>? reasons = null` — List of errors that caused the current one
+- `Dictionary<string, object>? metadata = null` — Technical details about the error. Can be passed via the `CreateMetadata()` method:
+    ```csharp
+    SomeError(
+        ...,
+        metadata: CreateMetadata(
+            (ErrorMetadataType.FieldName, "SOME_FIELD"),
+            (ErrorMetadataType.ErrorCode, "CUSTOM_CODE")
+        )
+    )
+    ``` 

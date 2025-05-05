@@ -66,11 +66,6 @@ if (validationResult.IsFailed)
 ### **Интеграция с FluentResults**
 - Совместима со всеми возможностями FluentResults (комбинация результатов, обработка цепочек ошибок)
 - Ошибки автоматически сериализуются в стандартные структуры FluentResults
-- Расширяет метаданные через `WithMetadata()`:
-  ```csharp
-  Result.Fail(new NotFoundError("USER_NOT_FOUND", "User")
-      .WithMetadata(ErrorMetadataType.DocumentationUrl, "https://errors.com/user-not-found"));
-  ```
 
 ---
 
@@ -83,10 +78,35 @@ if (validationResult.IsFailed)
 ---
 
 ### **Рекомендации по расширению**
-1. Добавить специфичные ошибки:
-   ```csharp
-   public sealed class DatabaseError : BaseError { ... }
-   ```
-   ```
 
-Библиотека подходит для проектов, где требуется стандартизация обработки ошибок и глубокая детализация проблем.
+1. **Добавление специфичных ошибок**  
+Создавайте классы ошибок, наследуясь от `BaseError`:
+```csharp
+public sealed class DatabaseError : BaseError 
+{ 
+    // Реализация конструктора
+    public DatabaseError(...) : base(...) { ... } 
+}
+```
+
+2. **Конструктор ошибки**  
+При реализации конструктора:
+- Передавайте параметры в родительский класс через `base()`
+- Используйте метод `CreateMetadata()` из `BaseError` для формирования словаря метаданных
+
+**Обязательные параметры**:
+- `string message` — понятное пользователю сообщение об ошибке
+- `ErrorType errorType` — тип ошибки из перечисления `ErrorType`
+
+**Необязательные параметры**:
+- `IEnumerable<IError>? reasons = null` — список ошибок, вызвавших текущую
+- `Dictionary<string, object>? metadata = null` — технические подробности об ошибке. Можно передать через метод `CreateMetadata()`:
+    ```csharp
+    SomeError(
+        ...,
+        metadata: CreateMetadata(
+            (ErrorMetadataType.FieldName, "SOME_FIELD"),
+            (ErrorMetadataType.ErrorCode, "CUSTOM_CODE")
+        )
+    )
+    ```
