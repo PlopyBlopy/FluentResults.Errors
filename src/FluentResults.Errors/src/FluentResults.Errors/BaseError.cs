@@ -7,11 +7,6 @@
     public abstract class BaseError : IError
     {
         /// <summary>
-        /// Gets the type of the error from the ErrorType enumeration
-        /// </summary>
-        public ErrorType ErrorType { get; }
-
-        /// <summary>
         /// Gets the human-readable error message
         /// </summary>
         public string Message { get; }
@@ -38,7 +33,6 @@
         protected BaseError(string message, ErrorType errorType, IEnumerable<IError>? reasons = null, Dictionary<string, object>? metadata = null)
         {
             Message = message;
-            ErrorType = errorType;
             Metadata.Add("errorType", errorType);
 
             if (reasons != null)

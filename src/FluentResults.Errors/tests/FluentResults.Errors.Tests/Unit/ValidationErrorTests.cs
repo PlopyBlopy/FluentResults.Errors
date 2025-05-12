@@ -18,7 +18,6 @@
             Assert.True(validationError.Reasons.Any());
             Assert.IsType<ValidationFieldError>(validationError.Reasons[0]);
             Assert.Equal("Validation error.", validationError.Message);
-            Assert.Equal(ErrorType.Validation, validationError.ErrorType);
         }
     }
 }
